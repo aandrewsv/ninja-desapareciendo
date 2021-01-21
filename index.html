@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Assignment 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 30px;
+            padding: 20px;
+        }
+        .img{
+            height: 100px;
+            border: 2px solid black;
+        }
+        h1{
+            text-align: center;
+        }
+        .btn{
+            background-color: green;
+            color: white;
+            position: fixed;
+            top: 30px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.disappear').click(function(){
+                $(this).slideToggle();
+            });
+            $('.btn').click(function(){
+                $('img').show();
+            })
+        });
+    </script>
+</head>
+<body>
+    <button class="btn">Restore</button>
+    <h1>jQuery Assignment 1</h1>
+    <img class="disappear img" src="dojocat.jpg" alt="">
+    <img class="disappear img" src="dojocat.jpg" alt="">
+    <img class="disappear img" src="dojocat.jpg" alt="">
+    <img class="disappear img" src="dojocat.jpg" alt="">
+    <img class="disappear img" src="dojocat.jpg" alt="">
+    <img class="disappear img" src="dojocat.jpg" alt="">
+    <img class="disappear img" src="dojocat.jpg" alt="">
+    <img class="disappear img" src="dojocat.jpg" alt="">
+</body>
+</html>
